@@ -17,7 +17,7 @@ const newId= Symbol('123')
 //console.log(newId);
 
 const BigInt= 4366746343846233;
-console.log(BigInt)
+// console.log(BigInt)
 
 //#Referece (non- preemitive)
  // Array, Object , functions
@@ -30,4 +30,33 @@ const heros=["mohit", "Bhanu", "Rishabh", "somiya"]
 const myfunction= function(){
     console.log("Hello MOhit")
 }
-myfunction()
+// myfunction()
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//# Stack(primitive) and Heap(non-primitive) Memory
+
+//stack
+let myYouTubename="mohitkumarsinghdotcom"
+
+let anothername= myYouTubename
+anothername="mohitsingh"
+
+// console.log(myYouTubename)  //mohitkumarsinghdotcom
+// console.log(anothername)    //mohitsingh    
+
+
+//Heap
+
+let userone = {
+    email: "user@google.com",
+    upi: "user@ybl"
+
+}
+let userTwo= userone
+userTwo.email="mohitsingh@google.com"
+
+console.log(userone.email)  // mohitsingh@google.com
+console.log(userTwo.email)  // same
